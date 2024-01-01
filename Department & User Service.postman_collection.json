@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "cf82c7b6-1367-477e-b53b-e513d0562ac6",
+		"name": "Department & User Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "24456991",
+		"_collection_link": "https://gold-escape-851569.postman.co/workspace/SpringbootProjects~383f23a7-dd7e-46af-994f-47664b38444d/collection/24456991-cf82c7b6-1367-477e-b53b-e513d0562ac6?action=share&source=collection_link&creator=24456991"
+	},
+	"item": [
+		{
+			"name": "saveDepartment",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getDepartmentById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8085/dept/4"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllDepartments",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "saveUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Ayansh\",\r\n    \"lastName\":\"Swami\",\r\n    \"email\":\"swamiayansh@gmail.com\",\r\n    \"deptId\":7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8086/user/save"
+			},
+			"response": []
+		},
+		{
+			"name": "getUser",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
